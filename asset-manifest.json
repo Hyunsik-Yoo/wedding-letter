@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/wedding-letter/static/css/main.073c9b0a.css",
+    "main.js": "/wedding-letter/static/js/main.b4109784.js",
+    "static/js/787.6dbb06c1.chunk.js": "/wedding-letter/static/js/787.6dbb06c1.chunk.js",
+    "static/media/main.png": "/wedding-letter/static/media/main.7eb9c72c914ee3951ed3.png",
+    "index.html": "/wedding-letter/index.html",
+    "main.073c9b0a.css.map": "/wedding-letter/static/css/main.073c9b0a.css.map",
+    "main.b4109784.js.map": "/wedding-letter/static/js/main.b4109784.js.map",
+    "787.6dbb06c1.chunk.js.map": "/wedding-letter/static/js/787.6dbb06c1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.b4109784.js"
+  ]
+}
