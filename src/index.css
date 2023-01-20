@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Apple SD Gothic Neo";
+  src: local("AppleSDGothicNeoL"),
+   url("./font/AppleSDGothicNeoL.ttf") format("truetype");
+  font-weight: light;
+}
+
+@font-face {
+  font-family: "Apple SD Gothic Neo";
+  src: local("AppleSDGothicNeoR"),
+   url("./font/AppleSDGothicNeoR.ttf") format("truetype");
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: "Apple SD Gothic Neo";
+  src: local("AppleSDGothicNeoB"),
+   url("./font/AppleSDGothicNeoB.ttf") format("truetype");
+  font-weight: bold;
+}

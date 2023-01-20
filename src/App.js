@@ -1,12 +1,34 @@
 import './App.css';
 import CorneredView from './view/CorneredView';
+import ChairView from './view/ChairView';
 
 import mainImage from './resource/main.png';
 import starImage from './resource/star.png';
 
+import InviteYouView from './view/InviteYouView';
+import HyunsikProfileView from './view/HyunsikProfileView';
+import EunjiProfileView from './view/EunjiProfileView';
+import DateAndLocationView from './view/DateAndLocationView';
+
+import photo1 from './resource/image1.png';
+import photo2 from './resource/image2.png';
+import photo3 from './resource/image3.png';
+import gradientBackgroud from './resource/gradient-background.png';
+import gradientPhoto from './resource/gradient-image.png';
+import photo5 from './resource/image5.png';
+import photo6 from './resource/image6.png';
+import photo7 from './resource/image7.png';
+import photo8 from './resource/image8.png';
+import photo9 from './resource/image9.png';
+import photo10 from './resource/image10.png';
+import photo11 from './resource/image11.png';
+import photo12 from './resource/image12.png';
+
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{
+      backgroundColor: '#F2F2F2'
+    }}>
       <div align="left" style={{
         marginTop: 67,
         marginLeft: 28
@@ -174,8 +196,224 @@ function App() {
           height: 32,
           marginLeft: 9
         }} />
+      </div>
+
+      <p style={{
+        fontFamily: 'Unbounded',
+        fontWeight: 600,
+        fontSize: 24,
+        marginTop: 10,
+        marginBottom: 0,
+        marginLeft: 30,
+        textAlign: 'left',
+        color: '#0F0F0F',
+        lineHeight: '32px'
+      }}>Save the date</p>
+
+      <ChairView />
+
+      <p style={{
+        fontFamily: 'Apple SD Gothic Neo',
+        fontWeight: 'light',
+        fontSize: 16,
+        margin: 0,
+        color: '#7E5032',
+        lineHeight: '27px',
+        marginTop: 35,
+        letterSpacing: '-2.5%'
+      }}>
+        따뜻한 봄에 시작한 인연이<br></br>
+        함께 맞이하는 네 번째 봄이 다가오는 날<br></br>
+        부부가 되려 합니다.<br></br>
+        <br></br>
+        저희 두 사람의 새로운 시작에<br></br>
+        소중한 분들을 초대합니다.<br></br>
+        부디 귀한 걸음 하시어<br></br>
+        축하와 격려로 함께해 주세요.<br></br>
+      </p>
+
+      <InviteYouView />
+
+      <HyunsikProfileView />
+
+      <EunjiProfileView />
+
+      <DateAndLocationView />
+
+      <div>
+        <img src={photo1} style={{
+          maxWidth: '100%'
+        }} />
+
+        <img src={photo2} style={{
+          maxWidth: '100%',
+          marginTop: 14
+        }} />
+
+        <img src={photo3} style={{
+          maxWidth: '100%',
+          marginTop: 14
+        }} />
+
+        <div style={{
+          position: 'relative',
+          marginTop: 25
+        }}>
+          <img src={gradientBackgroud} style={{
+            maxWidth: '100%'
+          }} />
+
+          <img src={gradientPhoto} style={{
+            maxWidth: '55%',
+            position: 'absolute',
+            top: 51,
+            left: 0,
+            right: 0,
+            margin: 'auto'
+          }} />
+
+          <p style={{
+            fontFamily: 'Unbounded',
+            fontWeight: 400,
+            fontSize: 9,
+            margin: 0,
+            color: '#633813',
+            lineHeight: '24px',
+            letterSpacing: '9%',
+            position: 'absolute',
+            left: 40,
+            top: 225,
+            transform: 'rotate(-90deg)'
+          }}>
+            2023.04.01
+          </p>
+
+          <p style={{
+            fontFamily: 'Unbounded',
+            fontWeight: 400,
+            fontSize: 9,
+            margin: 0,
+            color: '#633813',
+            lineHeight: '24px',
+            letterSpacing: '9%',
+            position: 'absolute',
+            right: 40,
+            top: 225,
+            transform: 'rotate(90deg)'
+          }}>
+            Wedding Day
+          </p>
+
+          <p style={{
+            fontFamily: 'Unbounded',
+            fontWeight: 250,
+            fontSize: 40,
+            margin: 'auto',
+            color: '#633813',
+            lineHeight: '50px',
+            position: 'absolute',
+            bottom: 38,
+            left: 0,
+            right: 0
+          }}>
+            OUR<br></br>
+            MEMORABLE<br></br>
+            MOMENT
+          </p>
+        </div>
+
+        <div style={{
+          display: 'flex',
+          flexDirection: 'row'
+        }}>
+          <img src={photo5} style={{
+            width: '49%',
+            marginRight: 5
+          }} />
+
+          <img src={photo6} style={{
+            width: '49%',
+            marginLeft: 5
+          }} />
+        </div>
+      </div>
+
+      <div style={{
+        marginTop: 14,
+        position: 'relative'
+      }}>
+        <div style={{
+          width: '100%',
+          height: 370
+        }}/>
+
+        <img src={photo7} style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '70%'
+        }} />
+      </div>
+
+      <div style={{
+        marginTop: 14,
+        position: 'relative'
+      }}>
+        <div style={{
+          width: '100%',
+          height: 370
+        }}/>
+
+        <img src={photo8} style={{
+          position: 'absolute',
+          top: 0,
+          right: 0,
+          width: '70%'
+        }} />
+      </div>
+
+      <div style={{
+        backgroundColor: '#000000',
+        paddingTop: 14
+      }}>
+        <div style={{
+          marginLeft: 20,
+          marginRight: 20,
+          display: 'flex',
+          flexDirection: 'row',
+          marginTop: 28
+        }}>
+          <img src={photo9} style={{
+            maxWidth: '49%',
+            marginRight: 4
+          }} />
+
+          <img src={photo10} style={{
+            maxWidth: '49%',
+            marginLeft: 4
+          }} />
+        </div>
+
+        <div style={{
+          marginLeft: 20,
+          marginRight: 20,
+          display: 'flex',
+          flexDirection: 'row',
+          marginTop: 8
+        }}>
+          <img src={photo11} style={{
+            maxWidth: '49%',
+            marginRight: 4
+          }} />
+
+          <img src={photo12} style={{
+            maxWidth: '49%',
+            marginLeft: 4
+          }} />
+        </div>
 
       </div>
+
     </div>
   );
 }
