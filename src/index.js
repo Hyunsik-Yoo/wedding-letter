@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserView, MobileView } from 'react-device-detect';
 
 import './font/AppleSDGothicNeoL.ttf';
 import './font/AppleSDGothicNeoR.ttf';
@@ -11,7 +12,21 @@ import './font/AppleSDGothicNeoB.ttf';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <>
+      <BrowserView>
+        <div style={{
+          maxWidth: 390,
+          marginLeft: 0,
+          marginRight: 0,
+          margin: 'auto'
+        }}>
+          <App />
+        </div>
+      </BrowserView>
+      <MobileView>
+        <App />
+      </MobileView>
+    </>
   </React.StrictMode>
 );
 
