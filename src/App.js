@@ -20,7 +20,7 @@ function App() {
       backgroundColor: '#F2F2F2'
     }}>
       <div align="left" style={{
-        marginTop: 67,
+        paddingTop: 67,
         marginLeft: 28
       }}>
         <CorneredView title={"230401"} />

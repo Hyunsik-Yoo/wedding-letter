@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wedding-letter/static/css/main.24de9fa7.css",
-    "main.js": "/wedding-letter/static/js/main.08267cbd.js",
+    "main.js": "/wedding-letter/static/js/main.e06b1eb9.js",
     "static/js/787.6dbb06c1.chunk.js": "/wedding-letter/static/js/787.6dbb06c1.chunk.js",
     "static/media/AppleSDGothicNeoL.ttf": "/wedding-letter/static/media/AppleSDGothicNeoL.0ed4f3cf8e0a053dbc9c.ttf",
     "static/media/AppleSDGothicNeoR.ttf": "/wedding-letter/static/media/AppleSDGothicNeoR.d159b4d4ce2ef2592daa.ttf",
@@ -11,7 +11,7 @@
     "static/media/gradient-background.png": "/wedding-letter/static/media/gradient-background.12ad89c0b3e59bf056c3.png",
     "static/media/image1.png": "/wedding-letter/static/media/image1.a92704f332f2a4729941.png",
     "static/media/invite-you.png": "/wedding-letter/static/media/invite-you.a65bfe600b31f284102e.png",
-    "static/media/main.png": "/wedding-letter/static/media/main.7eb9c72c914ee3951ed3.png",
+    "static/media/main.png": "/wedding-letter/static/media/main.dec38844243aa5a527fe.png",
     "static/media/image9.png": "/wedding-letter/static/media/image9.290f254f517227406113.png",
     "static/media/image3.png": "/wedding-letter/static/media/image3.23b02d1c2cd40bee2211.png",
     "static/media/image8.png": "/wedding-letter/static/media/image8.9de96df097918bbd9bfe.png",
@@ -27,11 +27,11 @@
     "static/media/image5.png": "/wedding-letter/static/media/image5.73693b4571fe6a76662f.png",
     "index.html": "/wedding-letter/index.html",
     "main.24de9fa7.css.map": "/wedding-letter/static/css/main.24de9fa7.css.map",
-    "main.08267cbd.js.map": "/wedding-letter/static/js/main.08267cbd.js.map",
+    "main.e06b1eb9.js.map": "/wedding-letter/static/js/main.e06b1eb9.js.map",
     "787.6dbb06c1.chunk.js.map": "/wedding-letter/static/js/787.6dbb06c1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.24de9fa7.css",
-    "static/js/main.08267cbd.js"
+    "static/js/main.e06b1eb9.js"
   ]
 }

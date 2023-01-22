@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { RenderAfterNavermapsLoaded, NaverMap, Marker } from 'react-naver-maps';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 import copyIcon from '../resource/icon_copy.png';
 
@@ -52,10 +53,11 @@ class LocationView extends Component {
                 </RenderAfterNavermapsLoaded>
 
                 <div style={{
-                    display: 'flex',
-                    flexDirection: 'row'
+                    height: 62
                 }}>
-                    <div>
+                    <div style={{
+                        float: 'left'
+                    }}>
                         <p style={{
                             fontFamily: 'Apple SD Gothic Neo',
                             fontWeight: 'bold',
@@ -85,40 +87,48 @@ class LocationView extends Component {
                         </p>
                     </div>
 
-                    <button style={{
-                        backgroundColor: '#51508A',
-                        borderRadius: 8,
-                        height: 36,
-                        border: '1px solid #3E3D6B',
-                        marginTop: 20,
-                        padding: '6px 12px',
-                        marginBottom: 0,
-                        marginLeft: 32
-                    }}>
-                        <div style={{
-                            display: 'flex',
-                            flexDirection: 'row'
+                    <CopyToClipboard
+                        text={"서울 마포구 양화로 87"}
+                        onCopy={() => alert("주소를 복사했어요🙇‍♂️")}
+                    >
+                        <button style={{
+                            backgroundColor: '#51508A',
+                            borderRadius: 8,
+                            height: 36,
+                            border: '1px solid #3E3D6B',
+                            marginTop: 20,
+                            padding: '6px 12px',
+                            marginBottom: 0,
+                            marginLeft: 32,
+                            marginRight: 30,
+                            float: "right"
                         }}>
-                            <img src={copyIcon} style={{
-                                width: 20,
-                                height: 20,
-                                marginTop: 2
-                            }} />
-
-                            <p style={{
-                                fontFamily: 'Apple SD Gothic Neo',
-                                fontWeight: 'regular',
-                                fontSize: 12,
-                                color: '#FFFFFF',
-                                lineHeight: '24px',
-                                margin: 0,
-                                letterSpacing: '-1%',
-                                marginLeft: 2
+                            <div style={{
+                                display: 'flex',
+                                flexDirection: 'row'
                             }}>
-                                주소 복사
-                            </p>
-                        </div>
-                    </button>
+                                <img src={copyIcon} style={{
+                                    width: 20,
+                                    height: 20,
+                                    marginTop: 2
+                                }} />
+
+                                <p style={{
+                                    fontFamily: 'Apple SD Gothic Neo',
+                                    fontWeight: 'regular',
+                                    fontSize: 12,
+                                    color: '#FFFFFF',
+                                    lineHeight: '24px',
+                                    margin: 0,
+                                    letterSpacing: '-1%',
+                                    marginLeft: 2
+                                }}>
+                                    주소 복사
+                                </p>
+                            </div>
+                        </button>
+                    </CopyToClipboard>
+
 
                 </div>
 
@@ -370,12 +380,11 @@ class LocationView extends Component {
                     marginRight: 30,
                     marginTop: 26,
                     paddingBottom: 60,
-                    display: 'flex',
-                    flexDirection: 'row',
+                    height: 192
                 }}>
                     <div style={{
-                        maxWidth: '50%',
-                        align: 'left'
+                        maxWidth: '49%',
+                        float: "left"
                     }}>
                         <p style={{
                             fontFamily: 'Apple SD Gothic Neo',
@@ -413,33 +422,37 @@ class LocationView extends Component {
                             maxWidth: '100%',
                             marginTop: 8
                         }}>
-                            <button style={{
-                                backgroundColor: '#7776B4',
-                                borderRadius: 15,
-                                height: 30,
-                                borderWidth: 0,
-                                padding: '1px 9px',
-                                float: 'left'
-                            }}>
-                                <p style={{
-                                    fontFamily: 'Apple SD Gothic Neo',
-                                    fontWeight: 'regular',
-                                    fontSize: 12,
-                                    color: '#CAC9FC',
-                                    lineHeight: '24px',
-                                    margin: 0,
-                                    letterSpacing: '-1%'
+                            <CopyToClipboard
+                                text={"국민 709402-00-086053"}
+                                onCopy={() => alert("번호를 복사했어요🙇‍♂️")}
+                            >
+                                <button style={{
+                                    backgroundColor: '#7776B4',
+                                    borderRadius: 15,
+                                    height: 30,
+                                    borderWidth: 0,
+                                    padding: '1px 9px',
+                                    float: 'left'
                                 }}>
-                                    복사하기
-                                </p>
-                            </button>
+                                    <p style={{
+                                        fontFamily: 'Apple SD Gothic Neo',
+                                        fontWeight: 'regular',
+                                        fontSize: 12,
+                                        color: '#CAC9FC',
+                                        lineHeight: '24px',
+                                        margin: 0,
+                                        letterSpacing: '-1%'
+                                    }}>
+                                        복사하기
+                                    </p>
+                                </button>
+                            </CopyToClipboard>
                         </div>
                     </div>
 
                     <div style={{
-                        maxWidth: '50%',
-                        align: 'left',
-                        marginLeft: 20
+                        maxWidth: '49%',
+                        float: 'right'
                     }}>
                         <p style={{
                             fontFamily: 'Apple SD Gothic Neo',
@@ -477,26 +490,31 @@ class LocationView extends Component {
                             maxWidth: '100%',
                             marginTop: 8
                         }}>
-                            <button style={{
-                                backgroundColor: '#7776B4',
-                                borderRadius: 15,
-                                height: 30,
-                                borderWidth: 0,
-                                padding: '1px 9px',
-                                float: 'left'
-                            }}>
-                                <p style={{
-                                    fontFamily: 'Apple SD Gothic Neo',
-                                    fontWeight: 'regular',
-                                    fontSize: 12,
-                                    color: '#CAC9FC',
-                                    lineHeight: '24px',
-                                    margin: 0,
-                                    letterSpacing: '-1%'
+                            <CopyToClipboard
+                                text={"국민 879602-01-083525"}
+                                onCopy={() => alert("번호를 복사했어요🙇‍♀️")}
+                            >
+                                <button style={{
+                                    backgroundColor: '#7776B4',
+                                    borderRadius: 15,
+                                    height: 30,
+                                    borderWidth: 0,
+                                    padding: '1px 9px',
+                                    float: 'left'
                                 }}>
-                                    복사하기
-                                </p>
-                            </button>
+                                    <p style={{
+                                        fontFamily: 'Apple SD Gothic Neo',
+                                        fontWeight: 'regular',
+                                        fontSize: 12,
+                                        color: '#CAC9FC',
+                                        lineHeight: '24px',
+                                        margin: 0,
+                                        letterSpacing: '-1%'
+                                    }}>
+                                        복사하기
+                                    </p>
+                                </button>
+                            </CopyToClipboard>
                         </div>
 
 
