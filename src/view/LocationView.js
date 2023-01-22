@@ -1,0 +1,512 @@
+import React, { Component } from "react";
+import { RenderAfterNavermapsLoaded, NaverMap, Marker } from 'react-naver-maps';
+
+import copyIcon from '../resource/icon_copy.png';
+
+class LocationView extends Component {
+    render() {
+        return (
+            <div style={{
+                backgroundColor: '#616096',
+                paddingTop: 41
+            }}>
+                <p style={{
+                    fontFamily: 'Unbounded',
+                    fontWeight: 600,
+                    fontSize: 23,
+                    color: '#FFFFFF',
+                    lineHeight: '34px',
+                    marginTop: 0,
+                    marginLeft: 30,
+                    marginBottom: 19,
+                    textAlign: 'left'
+                }}>
+                    Location
+                </p>
+
+                <RenderAfterNavermapsLoaded
+                    ncpClientId={'tmxy7l03r6'}
+                    error={<p>Maps Load Error</p>}
+                    loading={<p>Maps Loading...</p>}
+                >
+                    <NaverMap
+                        mapDivId={"react-naver-map"}
+                        style={{
+                            marginTop: 6,
+                            marginLeft: 30,
+                            marginRight: 30,
+                            height: 229
+                        }}
+                        defaultCenter={{ lat: 37.55252989697258, lng: 126.91731877461567 }}
+                        defaultZoom={15}
+                    >
+                        <Marker
+                            key={1}
+                            position={{ lat: 37.55252989697258, lng: 126.91731877461567 }}
+                            title={"웨딩 시그니처"}
+                            onClick={() => {
+                                alert('여기는 네이버 입니다.')
+                            }}
+                        />
+                    </NaverMap>
+                </RenderAfterNavermapsLoaded>
+
+                <div style={{
+                    display: 'flex',
+                    flexDirection: 'row'
+                }}>
+                    <div>
+                        <p style={{
+                            fontFamily: 'Apple SD Gothic Neo',
+                            fontWeight: 'bold',
+                            fontSize: 16,
+                            color: '#FFFFFF',
+                            lineHeight: '24px',
+                            marginTop: 14,
+                            marginLeft: 30,
+                            marginBottom: 0,
+                            textAlign: 'left'
+                        }}>
+                            📍 웨딩시그니처
+                        </p>
+
+                        <p style={{
+                            fontFamily: 'Apple SD Gothic Neo',
+                            fontWeight: 'regular',
+                            fontSize: 14,
+                            color: '#FFFFFF',
+                            lineHeight: '24px',
+                            marginTop: 0,
+                            marginLeft: 30,
+                            marginBottom: 0,
+                            textAlign: 'left'
+                        }}>
+                            서울 마포구 양화로 87 (서교동 378-7)
+                        </p>
+                    </div>
+
+                    <button style={{
+                        backgroundColor: '#51508A',
+                        borderRadius: 8,
+                        height: 36,
+                        border: '1px solid #3E3D6B',
+                        marginTop: 20,
+                        padding: '6px 12px',
+                        marginBottom: 0,
+                        marginLeft: 32
+                    }}>
+                        <div style={{
+                            display: 'flex',
+                            flexDirection: 'row'
+                        }}>
+                            <img src={copyIcon} style={{
+                                width: 20,
+                                height: 20,
+                                marginTop: 2
+                            }} />
+
+                            <p style={{
+                                fontFamily: 'Apple SD Gothic Neo',
+                                fontWeight: 'regular',
+                                fontSize: 12,
+                                color: '#FFFFFF',
+                                lineHeight: '24px',
+                                margin: 0,
+                                letterSpacing: '-1%',
+                                marginLeft: 2
+                            }}>
+                                주소 복사
+                            </p>
+                        </div>
+                    </button>
+
+                </div>
+
+                <div align='left' style={{
+                    marginTop: 50,
+                    marginLeft: 30,
+                }}>
+                    <p style={{
+                        fontFamily: 'Apple SD Gothic Neo',
+                        fontWeight: 'bold',
+                        fontSize: 14,
+                        color: '#DFDEFF',
+                        lineHeight: '24px',
+                        margin: 0,
+                        backgroundColor: '#51508A',
+                        letterSpacing: '-1%',
+                        borderRadius: 6,
+                        padding: '2px 8px',
+                        display: 'inline-block'
+                    }}>
+                        지하철 안내
+                    </p>
+                </div>
+
+                <p style={{
+                    fontFamily: 'Apple SD Gothic Neo',
+                    fontWeight: 'regular',
+                    fontSize: 14,
+                    color: '#FFFFFF',
+                    lineHeight: '21px',
+                    textAlign: 'left',
+                    letterSpacing: '-1%',
+                    marginTop: 7,
+                    marginLeft: 38,
+                    marginBottom: 0,
+                    marginRight: 0
+                }}>
+                    2호선, 6호선 합정역 하차 - 2번 출구 도보 4분<br></br>
+                    홍대입구, 공항철도, 경의선 1번 출구 도보 11분
+                </p>
+
+                <div align='left' style={{
+                    marginTop: 14,
+                    marginLeft: 30,
+                }}>
+                    <p style={{
+                        fontFamily: 'Apple SD Gothic Neo',
+                        fontWeight: 'bold',
+                        fontSize: 14,
+                        color: '#DFDEFF',
+                        lineHeight: '24px',
+                        margin: 0,
+                        backgroundColor: '#51508A',
+                        letterSpacing: '-1%',
+                        borderRadius: 6,
+                        padding: '2px 8px',
+                        display: 'inline-block'
+                    }}>
+                        버스 안내
+                    </p>
+                </div>
+
+                <p style={{
+                    fontFamily: 'Apple SD Gothic Neo',
+                    fontWeight: 'regular',
+                    fontSize: 14,
+                    color: '#FFFFFF',
+                    lineHeight: '21px',
+                    textAlign: 'left',
+                    marginLeft: 38,
+                    marginBottom: 0,
+                    letterSpacing: '-1%',
+                    marginTop: 30
+                }}>
+                    서교동 / 우리은행서교동지점 / 합정역 하차
+                </p>
+
+                <div align='left' style={{
+                    marginLeft: 38,
+                    marginTop: 4,
+                }}>
+                    <p style={{
+                        fontFamily: 'Apple SD Gothic Neo',
+                        fontWeight: 'regular',
+                        fontSize: 14,
+                        color: '#FFFFFF',
+                        lineHeight: '21px',
+                        margin: 0,
+                        letterSpacing: '-1%',
+                        display: 'inline-block'
+                    }}>
+                        파랑(간선)
+                    </p>
+
+                    <p style={{
+                        fontFamily: 'Apple SD Gothic Neo',
+                        fontWeight: 'regular',
+                        fontSize: 14,
+                        color: '#FFFFFF',
+                        lineHeight: '21px',
+                        textAlign: 'left',
+                        marginLeft: 10,
+                        marginBottom: 0,
+                        letterSpacing: '-1%',
+                        marginTop: 0,
+                        display: 'inline-block'
+                    }}>
+                        271A, 921, 271A, 602, 603, 604, 761
+                    </p>
+                </div>
+
+                <div align='left' style={{
+                    marginLeft: 38,
+                    marginTop: 2,
+                }}>
+                    <p style={{
+                        fontFamily: 'Apple SD Gothic Neo',
+                        fontWeight: 'regular',
+                        fontSize: 14,
+                        color: '#FFFFFF',
+                        lineHeight: '21px',
+                        margin: 0,
+                        letterSpacing: '-1%',
+                        display: 'inline-block',
+                        float: 'left'
+                    }}>
+                        초록(지선)
+                    </p>
+
+                    <p style={{
+                        fontFamily: 'Apple SD Gothic Neo',
+                        fontWeight: 'regular',
+                        fontSize: 14,
+                        color: '#FFFFFF',
+                        lineHeight: '21px',
+                        textAlign: 'left',
+                        marginLeft: 10,
+                        marginBottom: 0,
+                        letterSpacing: '-1%',
+                        marginTop: 0,
+                        display: 'inline-block'
+                    }}>
+                        마포16, 마포08, 마포09, 마포15<br></br>
+                        5712, 5714, 6712, 6716, 7612, 7734, 7739
+                    </p>
+                </div>
+
+                <div align='left' style={{
+                    marginLeft: 38,
+                    marginTop: 2,
+                }}>
+                    <p style={{
+                        fontFamily: 'Apple SD Gothic Neo',
+                        fontWeight: 'regular',
+                        fontSize: 14,
+                        color: '#FFFFFF',
+                        lineHeight: '21px',
+                        margin: 0,
+                        letterSpacing: '-1%',
+                        display: 'inline-block',
+                        float: 'left'
+                    }}>
+                        빨강(광역)
+                    </p>
+
+                    <p style={{
+                        fontFamily: 'Apple SD Gothic Neo',
+                        fontWeight: 'regular',
+                        fontSize: 14,
+                        color: '#FFFFFF',
+                        lineHeight: '21px',
+                        textAlign: 'left',
+                        marginLeft: 10,
+                        marginBottom: 0,
+                        letterSpacing: '-1%',
+                        marginTop: 0,
+                        display: 'inline-block'
+                    }}>
+                        1000, 1100, 1101, 1200, 1300, 1301, 1302<br></br>
+                        1601, 3100
+                    </p>
+                </div>
+
+                <div align='left' style={{
+                    marginTop: 25,
+                    marginLeft: 30,
+                }}>
+                    <p style={{
+                        fontFamily: 'Apple SD Gothic Neo',
+                        fontWeight: 'bold',
+                        fontSize: 14,
+                        color: '#DFDEFF',
+                        lineHeight: '24px',
+                        margin: 0,
+                        backgroundColor: '#51508A',
+                        letterSpacing: '-1%',
+                        borderRadius: 6,
+                        padding: '2px 8px',
+                        display: 'inline-block'
+                    }}>
+                        주차 안내
+                    </p>
+                </div>
+
+                <p style={{
+                    fontFamily: 'Apple SD Gothic Neo',
+                    fontWeight: 'regular',
+                    fontSize: 14,
+                    color: '#FFFFFF',
+                    lineHeight: '21px',
+                    textAlign: 'left',
+                    marginLeft: 38,
+                    marginBottom: 0,
+                    letterSpacing: '-1%',
+                    marginTop: 7
+                }}>
+                    제 1주차장 - 본 건물<br></br>
+                    제 2주차장 - H스퀘어<br></br>
+                    제 3주차장 - 서교빌딩 주차장
+                </p>
+
+                <p style={{
+                    fontFamily: 'Apple SD Gothic Neo',
+                    fontWeight: 'regular',
+                    fontSize: 12,
+                    color: '#FFFFFF',
+                    lineHeight: '21px',
+                    textAlign: 'left',
+                    marginLeft: 38,
+                    marginBottom: 0,
+                    letterSpacing: '-1%',
+                    marginTop: 8
+                }}>
+                    *당일 모든 주차는 주차요원의 안내를 받아주시길 바랍니다.
+                </p>
+
+                <div style={{
+                    backgroundColor: '#FFFFFF',
+                    height: 1,
+                    width: 'auto',
+                    marginLeft: 20,
+                    marginRight: 20,
+                    marginTop: 31,
+                    opacity: 0.1
+                }} />
+
+                <div style={{
+                    marginLeft: 30,
+                    marginRight: 30,
+                    marginTop: 26,
+                    paddingBottom: 60,
+                    display: 'flex',
+                    flexDirection: 'row',
+                }}>
+                    <div style={{
+                        maxWidth: '50%',
+                        align: 'left'
+                    }}>
+                        <p style={{
+                            fontFamily: 'Apple SD Gothic Neo',
+                            fontWeight: 'bold',
+                            fontSize: 16,
+                            color: '#FFFFFF',
+                            lineHeight: '24px',
+                            textAlign: 'left',
+                            marginLeft: 0,
+                            marginBottom: 0,
+                            letterSpacing: '-1%',
+                            marginTop: 8
+                        }}>
+                            신랑 측 마음 전하실 곳
+                        </p>
+
+                        <p style={{
+                            fontFamily: 'Apple SD Gothic Neo',
+                            fontWeight: 'regular',
+                            fontSize: 14,
+                            color: '#9A99C8',
+                            lineHeight: '20px',
+                            textAlign: 'left',
+                            marginLeft: 0,
+                            marginBottom: 0,
+                            letterSpacing: '-1%',
+                            marginTop: 8
+                        }}>
+                            국민 709402-00-086053<br></br>
+                            유현식
+                        </p>
+
+                        <div style={{
+                            height: 30,
+                            maxWidth: '100%',
+                            marginTop: 8
+                        }}>
+                            <button style={{
+                                backgroundColor: '#7776B4',
+                                borderRadius: 15,
+                                height: 30,
+                                borderWidth: 0,
+                                padding: '1px 9px',
+                                float: 'left'
+                            }}>
+                                <p style={{
+                                    fontFamily: 'Apple SD Gothic Neo',
+                                    fontWeight: 'regular',
+                                    fontSize: 12,
+                                    color: '#CAC9FC',
+                                    lineHeight: '24px',
+                                    margin: 0,
+                                    letterSpacing: '-1%'
+                                }}>
+                                    복사하기
+                                </p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div style={{
+                        maxWidth: '50%',
+                        align: 'left',
+                        marginLeft: 20
+                    }}>
+                        <p style={{
+                            fontFamily: 'Apple SD Gothic Neo',
+                            fontWeight: 'bold',
+                            fontSize: 16,
+                            color: '#FFFFFF',
+                            lineHeight: '24px',
+                            textAlign: 'left',
+                            marginLeft: 0,
+                            marginBottom: 0,
+                            letterSpacing: '-1%',
+                            marginTop: 8
+                        }}>
+                            신부 측 마음 전하실 곳
+                        </p>
+
+                        <p style={{
+                            fontFamily: 'Apple SD Gothic Neo',
+                            fontWeight: 'regular',
+                            fontSize: 14,
+                            color: '#9A99C8',
+                            lineHeight: '20px',
+                            textAlign: 'left',
+                            marginLeft: 0,
+                            marginBottom: 0,
+                            letterSpacing: '-1%',
+                            marginTop: 8
+                        }}>
+                            국민 879602-01-083525<br></br>
+                            박은지
+                        </p>
+
+                        <div style={{
+                            height: 30,
+                            maxWidth: '100%',
+                            marginTop: 8
+                        }}>
+                            <button style={{
+                                backgroundColor: '#7776B4',
+                                borderRadius: 15,
+                                height: 30,
+                                borderWidth: 0,
+                                padding: '1px 9px',
+                                float: 'left'
+                            }}>
+                                <p style={{
+                                    fontFamily: 'Apple SD Gothic Neo',
+                                    fontWeight: 'regular',
+                                    fontSize: 12,
+                                    color: '#CAC9FC',
+                                    lineHeight: '24px',
+                                    margin: 0,
+                                    letterSpacing: '-1%'
+                                }}>
+                                    복사하기
+                                </p>
+                            </button>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        );
+    }
+}
+
+export default LocationView

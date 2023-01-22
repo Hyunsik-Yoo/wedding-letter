@@ -112,7 +112,7 @@ class EunjiProfileView extends Component {
                     paddingRight: 4,
                     paddingBottom: 2
                 }}>
-                    #🫠
+                    #b099119
                 </p>
             </div>
         );

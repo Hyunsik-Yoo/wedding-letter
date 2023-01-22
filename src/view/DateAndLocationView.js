@@ -18,7 +18,7 @@ class DateAndLocationView extends Component {
                     textAlign: 'left',
                     paddingLeft: 27
                 }}>
-                    Date
+                    🗓 Date
                 </p>
 
                 <p style={{
@@ -47,7 +47,7 @@ class DateAndLocationView extends Component {
                     paddingLeft: 27,
                     marginTop: 33
                 }}>
-                    Place
+                    📍Place
                 </p>
 
                 <p style={{

@@ -10,6 +10,9 @@ import HyunsikProfileView from './view/HyunsikProfileView';
 import EunjiProfileView from './view/EunjiProfileView';
 import DateAndLocationView from './view/DateAndLocationView';
 import PhotoView from './view/PhotoView';
+import InfoView from './view/InfoView';
+import LocationView from './view/LocationView';
+import FooterView from './view/FooterView';
 
 function App() {
   return (
@@ -34,7 +37,8 @@ function App() {
         position: 'relative',
         marginTop: 10,
         paddingLeft: 30,
-        paddingRight: 30
+        paddingRight: 30,
+        marginBottom: -4
       }}>
         <div style={{
           zIndex: 2,
@@ -113,25 +117,25 @@ function App() {
       <div style={{
         display: 'flex',
         flexDirection: 'row',
-        marginTop: 10,
+        marginTop: 0,
         marginLeft: 30,
         marginRight: 30
       }}>
         <div style={{
           backgroundColor: '#000000',
-          borderTopRightRadius: 16,
-          borderBottomRightRadius: 16,
-          height: 32,
+          borderTopRightRadius: 22,
+          borderBottomRightRadius: 22,
+          height: 44,
         }}>
           <p style={{
             color: '#FFFFFF',
             fontFamily: 'Unbounded',
             fontWeight: 400,
-            fontSize: 10,
-            paddingTop: 8,
+            fontSize: 11,
+            paddingTop: 14,
             paddingLeft: 10,
-            paddingRight: 16,
-            paddingBottom: 8,
+            paddingRight: 15,
+            paddingBottom: 14,
             margin: 0,
             lineHeight: '16px'
           }}>Wedding</p>
@@ -139,27 +143,27 @@ function App() {
 
         <div style={{
           border: '1px solid #000000',
-          borderRadius: 16,
-          height: 32,
-          width: 32,
-          marginLeft: 6
+          borderRadius: 22,
+          height: 44,
+          width: 44,
+          marginLeft: 0
         }} />
 
         <div style={{
           backgroundColor: '#000000',
-          borderRadius: 16,
-          height: 32,
-          marginLeft: 6
+          borderRadius: 22,
+          height: 44,
+          marginLeft: 0
         }}>
           <p style={{
             color: '#FFFFFF',
             fontFamily: 'Unbounded',
             fontWeight: 400,
             fontSize: 10,
-            paddingTop: 8,
-            paddingLeft: 14,
-            paddingRight: 14,
-            paddingBottom: 8,
+            paddingTop: 12,
+            paddingLeft: 13,
+            paddingRight: 13,
+            paddingBottom: 11,
             margin: 0,
             lineHeight: '16px'
           }}>Day</p>
@@ -167,21 +171,21 @@ function App() {
 
         <div style={{
           border: '1px solid #000000',
-          borderTopRightRadius: 16,
-          borderBottomRightRadius: 16,
-          height: 32,
-          width: 40,
-          marginLeft: 7
+          borderTopRightRadius: 22,
+          borderBottomRightRadius: 22,
+          height: 44,
+          width: 48,
+          marginLeft: 0
         }} />
 
         <div style={{
           width: 100,
           flexGrow: 1,
           border: '1px solid #000000',
-          borderTopRightRadius: 16,
-          borderBottomRightRadius: 16,
-          height: 32,
-          marginLeft: 9
+          borderTopRightRadius: 22,
+          borderBottomRightRadius: 22,
+          height: 44,
+          marginLeft: 0
         }} />
       </div>
 
@@ -228,6 +232,13 @@ function App() {
       <DateAndLocationView />
 
       <PhotoView />
+
+      <InfoView />
+
+      <LocationView />
+
+      <FooterView />
+
     </div >
   );
 }
