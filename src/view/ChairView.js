@@ -1,7 +1,9 @@
 import React, { Component } from "react";
+import Lottie from 'react-lottie';
 
 import chairImage from '../resource/chair.png';
 import heartImage from '../resource/heart.png';
+import * as animationData from '../resource/heart.json'
 
 class ChairView extends Component {
     render() {
@@ -89,11 +91,29 @@ class ChairView extends Component {
                     top: 153
                 }} />
 
+                <Lottie
+                    options={{
+                        loop: true,
+                        autoplay: true,
+                        animationData: animationData,
+                        rendererSettings: {
+                            preserveAspectRatio: 'xMidYMid slice'
+                        }
+                    }}
+                    height={'25%'}
+                    width={'25%'}
+                    style={{
+                        position: 'absolute',
+                        right: 0,
+                        bottom: 50
+                    }}
+                />
+
                 <img src={heartImage} alt="Heart image" style={{
                     width: 32,
                     height: 32,
                     position: 'absolute',
-                    right: 32,
+                    right: 36,
                     bottom: 32
                 }} />
             </div>
