@@ -25,6 +25,11 @@ function App() {
 
       var element = document.querySelector('#loading');
       element.parentNode.removeChild(element);
+
+      var html = document.querySelector('html');
+      if (html) {
+        html.style.overflow = 'auto';
+      }
     }, 3000);
     return () => {
       window.clearInterval(timer);
@@ -46,7 +51,8 @@ function App() {
         left: 0,
         right: 0,
         top: 0,
-        bottom: 0
+        bottom: 0,
+        overflow: 'hidden'
       }}>
         <Lottie
           options={{
@@ -57,6 +63,7 @@ function App() {
               preserveAspectRatio: 'xMidYMid slice'
             }
           }}
+          isClickToPauseDisabled={true}
           height={'100%'}
           width={'100%'}
         />
@@ -206,14 +213,16 @@ function App() {
             backgroundColor: '#000000',
             borderRadius: 22,
             height: 44,
-            marginLeft: 0
+            marginLeft: 0,
+            display: 'flex',
+            alignItems: 'center'
           }}>
             <p style={{
               color: '#FFFFFF',
               fontFamily: 'Unbounded',
               fontWeight: 400,
               fontSize: 10,
-              paddingTop: 12,
+              paddingTop: 11,
               paddingLeft: 13,
               paddingRight: 13,
               paddingBottom: 11,

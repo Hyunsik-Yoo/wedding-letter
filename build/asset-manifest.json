@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wedding-letter/static/css/main.24de9fa7.css",
-    "main.js": "/wedding-letter/static/js/main.c2841fa1.js",
+    "main.js": "/wedding-letter/static/js/main.4e863933.js",
     "static/js/787.6dbb06c1.chunk.js": "/wedding-letter/static/js/787.6dbb06c1.chunk.js",
     "static/media/AppleSDGothicNeoL.ttf": "/wedding-letter/static/media/AppleSDGothicNeoL.0ed4f3cf8e0a053dbc9c.ttf",
     "static/media/AppleSDGothicNeoR.ttf": "/wedding-letter/static/media/AppleSDGothicNeoR.d159b4d4ce2ef2592daa.ttf",
@@ -17,9 +17,9 @@
     "static/media/image8.png": "/wedding-letter/static/media/image8.9de96df097918bbd9bfe.png",
     "static/media/image12.png": "/wedding-letter/static/media/image12.57787c9133a94dbd32d5.png",
     "static/media/image7.png": "/wedding-letter/static/media/image7.0b9bf5d7b346bc84c097.png",
+    "static/media/image11.png": "/wedding-letter/static/media/image11.44cf3f1c07542c7112f5.png",
     "static/media/image2.png": "/wedding-letter/static/media/image2.231c3284a55d64003406.png",
     "static/media/image10.png": "/wedding-letter/static/media/image10.ca28a07ae2e71e0e2312.png",
-    "static/media/image11.png": "/wedding-letter/static/media/image11.f80d1f931fa2d90ae77d.png",
     "static/media/gradient-image.png": "/wedding-letter/static/media/gradient-image.b1c0414f1f563423bccd.png",
     "static/media/eunji-profile.png": "/wedding-letter/static/media/eunji-profile.8192b9e660a59c09334b.png",
     "static/media/hyunsik-profile.png": "/wedding-letter/static/media/hyunsik-profile.d9e2bc14d556e8884a17.png",
@@ -27,11 +27,11 @@
     "static/media/image5.png": "/wedding-letter/static/media/image5.73693b4571fe6a76662f.png",
     "index.html": "/wedding-letter/index.html",
     "main.24de9fa7.css.map": "/wedding-letter/static/css/main.24de9fa7.css.map",
-    "main.c2841fa1.js.map": "/wedding-letter/static/js/main.c2841fa1.js.map",
+    "main.4e863933.js.map": "/wedding-letter/static/js/main.4e863933.js.map",
     "787.6dbb06c1.chunk.js.map": "/wedding-letter/static/js/787.6dbb06c1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.24de9fa7.css",
-    "static/js/main.c2841fa1.js"
+    "static/js/main.4e863933.js"
   ]
 }

@@ -170,7 +170,7 @@ class LocationView extends Component {
                 </p>
 
                 <div align='left' style={{
-                    marginTop: 14,
+                    marginTop: 30,
                     marginLeft: 30,
                 }}>
                     <p style={{
@@ -200,7 +200,7 @@ class LocationView extends Component {
                     marginLeft: 38,
                     marginBottom: 0,
                     letterSpacing: '-1%',
-                    marginTop: 30
+                    marginTop: 7
                 }}>
                     서교동 / 우리은행서교동지점 / 합정역 하차
                 </p>
