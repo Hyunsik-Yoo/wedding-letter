@@ -10,7 +10,7 @@ class DateAndLocationView extends Component {
                 <p style={{
                     fontFamily: 'Unbounded',
                     fontWeight: 800,
-                    fontSize: 12,
+                    fontSize: 16,
                     margin: 0,
                     color: '#FFFFFF',
                     lineHeight: '16px',
@@ -18,7 +18,7 @@ class DateAndLocationView extends Component {
                     textAlign: 'left',
                     paddingLeft: 27
                 }}>
-                    🗓 Date
+                    🗓
                 </p>
 
                 <p style={{
@@ -39,7 +39,7 @@ class DateAndLocationView extends Component {
                 <p style={{
                     fontFamily: 'Unbounded',
                     fontWeight: 800,
-                    fontSize: 12,
+                    fontSize: 16,
                     margin: 0,
                     color: '#FFFFFF',
                     lineHeight: '16px',
@@ -47,7 +47,7 @@ class DateAndLocationView extends Component {
                     paddingLeft: 27,
                     marginTop: 33
                 }}>
-                    📍Place
+                    📍
                 </p>
 
                 <p style={{

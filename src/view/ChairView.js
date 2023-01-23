@@ -3,7 +3,6 @@ import Lottie from 'react-lottie';
 
 import chairImage from '../resource/chair.png';
 import heartImage from '../resource/heart.png';
-import * as animationData from '../resource/heart.json'
 
 class ChairView extends Component {
     render() {
@@ -90,24 +89,6 @@ class ChairView extends Component {
                     bottom: 16,
                     top: 153
                 }} />
-
-                <Lottie
-                    options={{
-                        loop: true,
-                        autoplay: true,
-                        animationData: animationData,
-                        rendererSettings: {
-                            preserveAspectRatio: 'xMidYMid slice'
-                        }
-                    }}
-                    height={'25%'}
-                    width={'25%'}
-                    style={{
-                        position: 'absolute',
-                        right: 8,
-                        bottom: 50
-                    }}
-                />
 
                 <img src={heartImage} alt="Heart image" style={{
                     width: 32,

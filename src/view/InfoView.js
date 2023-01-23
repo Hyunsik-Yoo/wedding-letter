@@ -50,7 +50,7 @@ class InfoView extends Component {
                     fontSize: 14,
                     color: '#000000',
                     lineHeight: '24px',
-                    marginTop: 8,
+                    marginTop: 24,
                     marginBottom: 0,
                     textAlign: 'left'
                 }}>

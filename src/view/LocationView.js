@@ -77,13 +77,14 @@ class LocationView extends Component {
                             fontWeight: 'regular',
                             fontSize: 14,
                             color: '#FFFFFF',
-                            lineHeight: '24px',
+                            lineHeight: '18px',
                             marginTop: 0,
                             marginLeft: 30,
                             marginBottom: 0,
                             textAlign: 'left'
                         }}>
-                            서울 마포구 양화로 87 (서교동 378-7)
+                            서울 마포구 양화로 87<br></br>
+                            (서교동 378-7)
                         </p>
                     </div>
 
@@ -96,7 +97,7 @@ class LocationView extends Component {
                             borderRadius: 8,
                             height: 36,
                             border: '1px solid #3E3D6B',
-                            marginTop: 20,
+                            marginTop: 25,
                             padding: '6px 12px',
                             marginBottom: 0,
                             marginRight: 30,

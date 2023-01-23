@@ -17,7 +17,7 @@ import InfoView from './view/InfoView';
 import LocationView from './view/LocationView';
 import FooterView from './view/FooterView';
 
-import * as animationData from './resource/heart.json'
+import * as animationData from './resource/loading.json'
 function App() {
   useEffect(() => {
     const timer = window.setTimeout(() => {
@@ -52,7 +52,9 @@ function App() {
         right: 0,
         top: 0,
         bottom: 0,
-        overflow: 'hidden'
+        overflow: 'hidden',
+        display: 'flex',
+        alignItems: 'center'
       }}>
         <Lottie
           options={{
@@ -64,8 +66,8 @@ function App() {
             }
           }}
           isClickToPauseDisabled={true}
-          height={'100%'}
-          width={'100%'}
+          height={'125px'}
+          width={'50px'}
         />
 
       </div>
@@ -80,7 +82,7 @@ function App() {
         bottom: 0
       }}>
         <div align="left" style={{
-          paddingTop: 67,
+          paddingTop: 50,
           marginLeft: 28
         }}>
           <CorneredView title={"230401"} />

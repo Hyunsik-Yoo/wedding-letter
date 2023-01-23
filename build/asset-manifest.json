@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wedding-letter/static/css/main.24de9fa7.css",
-    "main.js": "/wedding-letter/static/js/main.4e863933.js",
+    "main.js": "/wedding-letter/static/js/main.198408c7.js",
     "static/js/787.6dbb06c1.chunk.js": "/wedding-letter/static/js/787.6dbb06c1.chunk.js",
     "static/media/AppleSDGothicNeoL.ttf": "/wedding-letter/static/media/AppleSDGothicNeoL.0ed4f3cf8e0a053dbc9c.ttf",
     "static/media/AppleSDGothicNeoR.ttf": "/wedding-letter/static/media/AppleSDGothicNeoR.d159b4d4ce2ef2592daa.ttf",
@@ -27,11 +27,11 @@
     "static/media/image5.png": "/wedding-letter/static/media/image5.73693b4571fe6a76662f.png",
     "index.html": "/wedding-letter/index.html",
     "main.24de9fa7.css.map": "/wedding-letter/static/css/main.24de9fa7.css.map",
-    "main.4e863933.js.map": "/wedding-letter/static/js/main.4e863933.js.map",
+    "main.198408c7.js.map": "/wedding-letter/static/js/main.198408c7.js.map",
     "787.6dbb06c1.chunk.js.map": "/wedding-letter/static/js/787.6dbb06c1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.24de9fa7.css",
-    "static/js/main.4e863933.js"
+    "static/js/main.198408c7.js"
   ]
 }
