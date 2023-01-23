@@ -27,7 +27,6 @@ class FooterView extends Component {
                         if (navigator.share) {
                             navigator.share({
                                 title: '현식🤵 은지👰‍♀️ Wedding letter',
-                                text: '거짓말 같은 날에 초대를 받은 당신',
                                 url: 'https://hyunsik-yoo.github.io/wedding-letter/',
                             });
                         } else {
