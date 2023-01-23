@@ -99,7 +99,6 @@ class LocationView extends Component {
                             marginTop: 20,
                             padding: '6px 12px',
                             marginBottom: 0,
-                            marginLeft: 32,
                             marginRight: 30,
                             float: "right"
                         }}>

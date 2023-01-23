@@ -104,7 +104,7 @@ class ChairView extends Component {
                     width={'25%'}
                     style={{
                         position: 'absolute',
-                        right: 0,
+                        right: 8,
                         bottom: 50
                     }}
                 />
