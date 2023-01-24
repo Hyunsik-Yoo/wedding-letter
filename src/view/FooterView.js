@@ -27,7 +27,7 @@ class FooterView extends Component {
                         if (navigator.share) {
                             navigator.share({
                                 title: '현식🤵 은지👰‍♀️ Wedding letter',
-                                url: 'https://hyunsik-yoo.github.io/wedding-letter/',
+                                url: 'https://20230401.site/',
                             });
                         } else {
                             alert("공유하기가 지원되지 않는 환경 입니다.")
@@ -70,7 +70,7 @@ class FooterView extends Component {
                 </button>
 
                 <CopyToClipboard
-                    text={"https://hyunsik-yoo.github.io/wedding-letter/"}
+                    text={"https://20230401.site/"}
                     onCopy={() => alert("주소를 복사했어요🙇‍♂️")}
                 >
                     <button style={{

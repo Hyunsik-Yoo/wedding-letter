@@ -379,7 +379,7 @@ class LocationView extends Component {
                     marginLeft: 30,
                     marginRight: 30,
                     marginTop: 26,
-                    paddingBottom: 60,
+                    paddingBottom: 0,
                     height: 192
                 }}>
                     <div style={{
@@ -398,6 +398,7 @@ class LocationView extends Component {
                             letterSpacing: '-1%',
                             marginTop: 8
                         }}>
+                            🙇‍♂️<br></br>
                             신랑 측 마음 전하실 곳
                         </p>
 
@@ -466,6 +467,7 @@ class LocationView extends Component {
                             letterSpacing: '-1%',
                             marginTop: 8
                         }}>
+                            🙇‍♀️<br></br>
                             신부 측 마음 전하실 곳
                         </p>
 

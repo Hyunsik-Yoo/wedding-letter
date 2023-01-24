@@ -46,27 +46,27 @@ class InviteYouView extends Component {
                 <img src={starWithoutBorderImage} alt="Star without border icon" style={{
                     zIndex: 2,
                     width: 19,
-                    height: 19,
+                    height: 18,
                     position: 'absolute',
-                    right: 18,
+                    right: 19,
                     bottom: 21
                 }} />
 
                 <img src={starWithoutBorderImage} alt="Star without border icon" style={{
                     zIndex: 2,
                     width: 19,
-                    height: 19,
+                    height: 18,
                     position: 'absolute',
-                    right: 40,
+                    right: 43,
                     bottom: 21
                 }} />
 
                 <img src={starWithoutBorderImage} alt="Star without border icon" style={{
                     zIndex: 2,
                     width: 19,
-                    height: 19,
+                    height: 18,
                     position: 'absolute',
-                    right: 64,
+                    right: 67,
                     bottom: 21
                 }} />
 
