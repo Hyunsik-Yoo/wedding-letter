@@ -19,7 +19,7 @@ class LocationView extends Component {
                     lineHeight: '34px',
                     marginTop: 0,
                     marginLeft: 30,
-                    marginBottom: 19,
+                    marginBottom: 10,
                     textAlign: 'left'
                 }}>
                     Location
@@ -33,10 +33,8 @@ class LocationView extends Component {
                     <NaverMap
                         mapDivId={"react-naver-map"}
                         style={{
-                            marginTop: 6,
-                            marginLeft: 30,
-                            marginRight: 30,
-                            height: 229
+                            marginTop: 0,
+                            height: 271
                         }}
                         defaultCenter={{ lat: 37.55252989697258, lng: 126.91731877461567 }}
                         defaultZoom={15}
@@ -53,25 +51,39 @@ class LocationView extends Component {
                 </RenderAfterNavermapsLoaded>
 
                 <div style={{
-                    height: 62
+                    display: 'flex',
+                    flexDirection: "column"
                 }}>
-                    <div style={{
-                        float: 'left'
+                    <p style={{
+                        fontSize: 18,
+                        lineHeight: '24px',
+                        marginTop: 16,
+                        marginLeft: 30,
+                        marginBottom: 0,
+                        textAlign: 'left'
                     }}>
-                        <p style={{
-                            fontFamily: 'Apple SD Gothic Neo',
-                            fontWeight: 'bold',
-                            fontSize: 16,
-                            color: '#FFFFFF',
-                            lineHeight: '24px',
-                            marginTop: 14,
-                            marginLeft: 30,
-                            marginBottom: 0,
-                            textAlign: 'left'
-                        }}>
-                            📍 웨딩시그니처
-                        </p>
+                        💒
+                    </p>
 
+                    <p style={{
+                        fontFamily: 'Apple SD Gothic Neo',
+                        fontWeight: 'bold',
+                        fontSize: 18,
+                        color: '#FFFFFF',
+                        lineHeight: '24px',
+                        marginTop: 6,
+                        marginLeft: 30,
+                        marginBottom: 0,
+                        textAlign: 'left'
+                    }}>
+                        웨딩시그니처
+                    </p>
+
+                    <div style={{
+                        display: 'flex',
+                        flexDirection: "row",
+                        marginLeft: 30,
+                    }}>
                         <p style={{
                             fontFamily: 'Apple SD Gothic Neo',
                             fontWeight: 'regular',
@@ -79,57 +91,49 @@ class LocationView extends Component {
                             color: '#FFFFFF',
                             lineHeight: '18px',
                             marginTop: 0,
-                            marginLeft: 30,
                             marginBottom: 0,
                             textAlign: 'left'
                         }}>
-                            서울 마포구 양화로 87<br></br>
-                            (서교동 378-7)
+                            서울 마포구 양화로 87 (서교동 378-7)
                         </p>
-                    </div>
 
-                    <CopyToClipboard
-                        text={"서울 마포구 양화로 87"}
-                        onCopy={() => alert("주소를 복사했어요🙇‍♂️")}
-                    >
-                        <button style={{
-                            backgroundColor: '#51508A',
-                            borderRadius: 8,
-                            height: 36,
-                            border: '1px solid #3E3D6B',
-                            marginTop: 25,
-                            padding: '6px 12px',
-                            marginBottom: 0,
-                            marginRight: 30,
-                            float: "right"
-                        }}>
-                            <div style={{
-                                display: 'flex',
-                                flexDirection: 'row'
+                        <CopyToClipboard
+                            text={"서울 마포구 양화로 87"}
+                            onCopy={() => alert("주소를 복사했어요🙇‍♂️")}
+                        >
+                            <button style={{
+                                backgroundColor: '#616096',
+                                marginLeft: 8,
+                                borderWidth: 0,
+                                marginTop: -4,
                             }}>
-                                <img src={copyIcon} style={{
-                                    width: 20,
-                                    height: 20,
-                                    marginTop: 2
-                                }} />
-
-                                <p style={{
-                                    fontFamily: 'Apple SD Gothic Neo',
-                                    fontWeight: 'regular',
-                                    fontSize: 12,
-                                    color: '#FFFFFF',
-                                    lineHeight: '24px',
-                                    margin: 0,
-                                    letterSpacing: '-1%',
-                                    marginLeft: 2
+                                <div style={{
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    height: 20
                                 }}>
-                                    주소 복사
-                                </p>
-                            </div>
-                        </button>
-                    </CopyToClipboard>
+                                    <img src={copyIcon} style={{
+                                        width: 20,
+                                        height: 20,
+                                        marginTop: 2
+                                    }} />
 
-
+                                    <p style={{
+                                        fontFamily: 'Apple SD Gothic Neo',
+                                        fontWeight: 'regular',
+                                        fontSize: 12,
+                                        color: '#D0C1F0',
+                                        lineHeight: '24px',
+                                        margin: 0,
+                                        letterSpacing: '-1%',
+                                        marginLeft: 2
+                                    }}>
+                                        <u>복사</u>
+                                    </p>
+                                </div>
+                            </button>
+                        </CopyToClipboard>
+                    </div>
                 </div>
 
                 <div align='left' style={{
@@ -140,13 +144,12 @@ class LocationView extends Component {
                         fontFamily: 'Apple SD Gothic Neo',
                         fontWeight: 'bold',
                         fontSize: 14,
-                        color: '#DFDEFF',
+                        color: '#CAC9FC',
                         lineHeight: '24px',
                         margin: 0,
-                        backgroundColor: '#51508A',
+                        backgroundColor: '#515086',
                         letterSpacing: '-1%',
-                        borderRadius: 6,
-                        padding: '2px 8px',
+                        padding: '0px 6px',
                         display: 'inline-block'
                     }}>
                         지하철 안내
@@ -157,11 +160,11 @@ class LocationView extends Component {
                     fontFamily: 'Apple SD Gothic Neo',
                     fontWeight: 'regular',
                     fontSize: 14,
-                    color: '#FFFFFF',
+                    color: '#CAC9FC',
                     lineHeight: '21px',
                     textAlign: 'left',
                     letterSpacing: '-1%',
-                    marginTop: 7,
+                    marginTop: 8,
                     marginLeft: 38,
                     marginBottom: 0,
                     marginRight: 0
@@ -171,20 +174,19 @@ class LocationView extends Component {
                 </p>
 
                 <div align='left' style={{
-                    marginTop: 30,
+                    marginTop: 20,
                     marginLeft: 30,
                 }}>
                     <p style={{
                         fontFamily: 'Apple SD Gothic Neo',
                         fontWeight: 'bold',
                         fontSize: 14,
-                        color: '#DFDEFF',
+                        color: '#CAC9FC',
                         lineHeight: '24px',
                         margin: 0,
-                        backgroundColor: '#51508A',
+                        backgroundColor: '#515086',
                         letterSpacing: '-1%',
-                        borderRadius: 6,
-                        padding: '2px 8px',
+                        padding: '0px 6px',
                         display: 'inline-block'
                     }}>
                         버스 안내
@@ -195,13 +197,14 @@ class LocationView extends Component {
                     fontFamily: 'Apple SD Gothic Neo',
                     fontWeight: 'regular',
                     fontSize: 14,
-                    color: '#FFFFFF',
+                    color: '#CAC9FC',
                     lineHeight: '21px',
                     textAlign: 'left',
+                    letterSpacing: '-1%',
+                    marginTop: 8,
                     marginLeft: 38,
                     marginBottom: 0,
-                    letterSpacing: '-1%',
-                    marginTop: 7
+                    marginRight: 0
                 }}>
                     서교동 / 우리은행서교동지점 / 합정역 하차
                 </p>
@@ -214,11 +217,12 @@ class LocationView extends Component {
                         fontFamily: 'Apple SD Gothic Neo',
                         fontWeight: 'regular',
                         fontSize: 14,
-                        color: '#FFFFFF',
+                        color: '#CAC9FC',
                         lineHeight: '21px',
-                        margin: 0,
+                        textAlign: 'left',
                         letterSpacing: '-1%',
-                        display: 'inline-block'
+                        display: 'inline-block',
+                        margin: 0
                     }}>
                         파랑(간선)
                     </p>
@@ -227,7 +231,7 @@ class LocationView extends Component {
                         fontFamily: 'Apple SD Gothic Neo',
                         fontWeight: 'regular',
                         fontSize: 14,
-                        color: '#FFFFFF',
+                        color: '#CAC9FC',
                         lineHeight: '21px',
                         textAlign: 'left',
                         marginLeft: 10,
@@ -248,7 +252,7 @@ class LocationView extends Component {
                         fontFamily: 'Apple SD Gothic Neo',
                         fontWeight: 'regular',
                         fontSize: 14,
-                        color: '#FFFFFF',
+                        color: '#CAC9FC',
                         lineHeight: '21px',
                         margin: 0,
                         letterSpacing: '-1%',
@@ -262,7 +266,7 @@ class LocationView extends Component {
                         fontFamily: 'Apple SD Gothic Neo',
                         fontWeight: 'regular',
                         fontSize: 14,
-                        color: '#FFFFFF',
+                        color: '#CAC9FC',
                         lineHeight: '21px',
                         textAlign: 'left',
                         marginLeft: 10,
@@ -284,7 +288,7 @@ class LocationView extends Component {
                         fontFamily: 'Apple SD Gothic Neo',
                         fontWeight: 'regular',
                         fontSize: 14,
-                        color: '#FFFFFF',
+                        color: '#CAC9FC',
                         lineHeight: '21px',
                         margin: 0,
                         letterSpacing: '-1%',
@@ -298,7 +302,7 @@ class LocationView extends Component {
                         fontFamily: 'Apple SD Gothic Neo',
                         fontWeight: 'regular',
                         fontSize: 14,
-                        color: '#FFFFFF',
+                        color: '#CAC9FC',
                         lineHeight: '21px',
                         textAlign: 'left',
                         marginLeft: 10,
@@ -320,13 +324,12 @@ class LocationView extends Component {
                         fontFamily: 'Apple SD Gothic Neo',
                         fontWeight: 'bold',
                         fontSize: 14,
-                        color: '#DFDEFF',
+                        color: '#CAC9FC',
                         lineHeight: '24px',
                         margin: 0,
-                        backgroundColor: '#51508A',
+                        backgroundColor: '#515086',
                         letterSpacing: '-1%',
-                        borderRadius: 6,
-                        padding: '2px 8px',
+                        padding: '0px 6px',
                         display: 'inline-block'
                     }}>
                         주차 안내
@@ -337,7 +340,7 @@ class LocationView extends Component {
                     fontFamily: 'Apple SD Gothic Neo',
                     fontWeight: 'regular',
                     fontSize: 14,
-                    color: '#FFFFFF',
+                    color: '#CAC9FC',
                     lineHeight: '21px',
                     textAlign: 'left',
                     marginLeft: 38,
@@ -354,7 +357,7 @@ class LocationView extends Component {
                     fontFamily: 'Apple SD Gothic Neo',
                     fontWeight: 'regular',
                     fontSize: 12,
-                    color: '#FFFFFF',
+                    color: '#CAC9FC',
                     lineHeight: '21px',
                     textAlign: 'left',
                     marginLeft: 38,

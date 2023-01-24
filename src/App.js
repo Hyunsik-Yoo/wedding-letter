@@ -40,7 +40,8 @@ function App() {
   return (
     <div className="App" style={{
       backgroundColor: '#F2F2F2',
-      position: 'relative'
+      position: 'relative',
+      height: '10000px'
     }}>
       <div id='loading' style={{
         zIndex: 4,
