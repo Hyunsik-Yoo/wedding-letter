@@ -94,26 +94,6 @@ class HyunsikProfileView extends Component {
                 }}>
                   #ISTJ
                 </p>
-        
-                <p style={{
-                  fontFamily: 'Apple SD Gothic Neo',
-                  fontWeight: 'regular',
-                  fontSize: 14,
-                  margin: 0,
-                  color: '#000000',
-                  lineHeight: '20px',
-                  letterSpacing: '-1%',
-                  position: 'absolute',
-                  top: 203,
-                  left: '55%',
-                  backgroundColor: '#DFDEFF',
-                  paddingLeft: 4,
-                  paddingTop: 2,
-                  paddingRight: 4,
-                  paddingBottom: 2
-                }}>
-                  #막공몬
-                </p>
               </div>
         );
     }

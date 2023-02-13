@@ -94,26 +94,6 @@ class EunjiProfileView extends Component {
                 }}>
                     #ISFP
                 </p>
-
-                <p style={{
-                    fontFamily: 'Apple SD Gothic Neo',
-                    fontWeight: 'regular',
-                    fontSize: 14,
-                    margin: 0,
-                    color: '#000000',
-                    lineHeight: '20px',
-                    letterSpacing: '-1%',
-                    position: 'absolute',
-                    top: 203,
-                    right: '55%',
-                    backgroundColor: '#FFDAD7',
-                    paddingLeft: 4,
-                    paddingTop: 2,
-                    paddingRight: 4,
-                    paddingBottom: 2
-                }}>
-                    #b099119
-                </p>
             </div>
         );
     }

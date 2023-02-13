@@ -40,8 +40,7 @@ function App() {
   return (
     <div className="App" style={{
       backgroundColor: '#F2F2F2',
-      position: 'relative',
-      height: '10000px'
+      position: 'relative'
     }}>
       <div id='loading' style={{
         zIndex: 4,
@@ -74,13 +73,7 @@ function App() {
       </div>
 
       <div id='contents' style={{
-        maxWidth: '100%',
-        maxWidth: '100%',
-        position: 'absolute',
-        left: 0,
-        right: 0,
-        top: 0,
-        bottom: 0
+        maxWidth: '100%'
       }}>
         <div align="left" style={{
           paddingTop: 50,
@@ -92,7 +85,7 @@ function App() {
             marginLeft: 6,
             display: 'inline-block'
           }}>
-            <CorneredView title={"pm 12:30"} />
+            <CorneredView title={"pm 12:40"} />
           </div>
         </div>
 
