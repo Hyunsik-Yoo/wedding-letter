@@ -218,6 +218,8 @@ class PhotoView extends Component {
                     width: '100%',
                     marginTop: 12
                 }} />
+                
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/j3Qg_3wNk40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         );
     }
