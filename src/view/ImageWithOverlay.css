@@ -1,0 +1,20 @@
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(242,68,52,0), rgba(242,68,52,0.3));
+    pointer-events: none; /* Prevents overlay from interfering with clicks */
+  }

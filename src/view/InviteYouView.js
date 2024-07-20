@@ -14,7 +14,9 @@ class InviteYouView extends Component {
                 position: 'relative'
             }}>
                 <img src={inviteImage} alt="Invite you image" style={{
-                    maxWidth: '100%'
+                    maxWidth: '100%',
+                    borderRadius: '16px',
+                    height: '434px',
                 }} />
 
                 <p style={{

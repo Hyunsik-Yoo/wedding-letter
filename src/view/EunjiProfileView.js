@@ -18,7 +18,11 @@ class EunjiProfileView extends Component {
                     width: '50%',
                     position: 'absolute',
                     right: 30,
-                    top: 0
+                    top: 0,
+                    borderRadius: '12px',
+                    border: '1px solid #000000',
+                    height: '237px',
+                    objectFit: 'cover'
                 }} />
 
                 <p style={{

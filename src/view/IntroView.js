@@ -5,6 +5,8 @@ import starImage from '../resource/star.png';
 
 import CorneredView from './CorneredView';
 
+import './ImageWithOverlay.css';
+
 class IntroView extends Component {
     render() {
         return (
@@ -61,10 +63,19 @@ class IntroView extends Component {
             }}>& Eunji</p>
           </div>
 
-          <img src={mainImage} alt="Main image" style={{
-            maxWidth: '100%',
-            marginTop: 45
-          }} />
+          <div className="image-container">
+            <img className="image" src={mainImage} alt="Main image" style={{
+              maxWidth: '100%',
+              marginTop: 45,
+              borderTopLeftRadius: '255px',
+              borderTopRightRadius: '255px',
+              border: '1px solid #000000',
+              height: '509px',
+              objectFit: 'cover'
+            }} />
+            <div className="overlay"></div>
+          </div>
+          
 
           <div vertical style={{
             zIndex: 2,
