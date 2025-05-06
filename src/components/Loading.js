@@ -7,7 +7,6 @@ class LoadingView extends Component {
     render() {
         return (
             <div id='loading' style={{
-                zIndex: 4,
                 backgroundColor: '#F2F2F2',
                 maxWidth: '100%',
                 height: '100vh',
@@ -16,7 +15,7 @@ class LoadingView extends Component {
                 right: 0,
                 top: 0,
                 bottom: 0,
-                overflow: 'hidden',
+                // overflow: 'hidden',
                 display: 'flex',
                 alignItems: 'center'
               }}>

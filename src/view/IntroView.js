@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { INTRO_STRINGS } from '../constants/strings';
 import mainImage from '../resource/main.png';
 import starImage from '../resource/star.png';
 
@@ -15,13 +15,13 @@ class IntroView extends Component {
           paddingTop: 50,
           marginLeft: 28
         }}>
-          <CorneredView title={"230401"} />
+          <CorneredView title={INTRO_STRINGS.DATE} />
 
           <div style={{
             marginLeft: 6,
             display: 'inline-block'
           }}>
-            <CorneredView title={"pm 12:40"} />
+            <CorneredView title={INTRO_STRINGS.TIME} />
           </div>
         </div>
 
@@ -47,7 +47,7 @@ class IntroView extends Component {
               paddingLeft: -2,
               color: '#F24434',
               lineHeight: '61px'
-            }}>Hyunsik</p>
+            }}>{INTRO_STRINGS.NAMES.GROOM}</p>
 
             <p style={{
               fontFamily: 'Unbounded',
@@ -60,7 +60,7 @@ class IntroView extends Component {
               paddingLeft: 0,
               color: '#F24434',
               lineHeight: '61px'
-            }}>& Eunji</p>
+            }}>& {INTRO_STRINGS.NAMES.BRIDE}</p>
           </div>
 
           <div className="image-container">
@@ -139,7 +139,7 @@ class IntroView extends Component {
               paddingBottom: 14,
               margin: 0,
               lineHeight: '16px'
-            }}>Wedding</p>
+            }}>{INTRO_STRINGS.TITLES.WEDDING}</p>
           </div>
 
           <div style={{
@@ -169,7 +169,7 @@ class IntroView extends Component {
               paddingBottom: 11,
               margin: 0,
               lineHeight: '16px'
-            }}>Day</p>
+            }}>{INTRO_STRINGS.TITLES.DAY}</p>
           </div>
 
           <div style={{
@@ -202,7 +202,7 @@ class IntroView extends Component {
           textAlign: 'left',
           color: '#0F0F0F',
           lineHeight: '32px'
-        }}>Save the date</p>
+        }}>{INTRO_STRINGS.TITLES.SAVE_THE_DATE}</p>
         </div>
         );
     }
