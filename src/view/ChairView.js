@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import Lottie from 'react-lottie';
+import { CHAIR_STRINGS } from '../constants/strings';
 
-import chairImage from '../resource/chair.png';
-import heartImage from '../resource/heart.png';
+import chairImage from '../resource/img_chair.png';
+import heartImage from '../resource/img_heart.png';
 
 class ChairView extends Component {
     render() {
@@ -35,7 +36,7 @@ class ChairView extends Component {
                     left: 16,
                     top: 33
                 }}>
-                    예쁜 예감이 들었다.
+                    {CHAIR_STRINGS.MESSAGES.FIRST}
                 </p>
 
                 <p style={{
@@ -56,7 +57,7 @@ class ChairView extends Component {
                     left: 16,
                     top: 57
                 }}>
-                    우리는 언제나 손을 잡고 있게 될 것이다.
+                    {CHAIR_STRINGS.MESSAGES.SECOND}
                 </p>
 
                 <p style={{
@@ -77,7 +78,7 @@ class ChairView extends Component {
                     left: 16,
                     top: 91
                 }}>
-                    -이이체, 연인 中-
+                    {CHAIR_STRINGS.MESSAGES.QUOTE}
                 </p>
 
                 <div style={{

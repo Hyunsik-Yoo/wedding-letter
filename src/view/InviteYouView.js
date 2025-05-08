@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-import inviteImage from '../resource/invite-you.png';
-import personIcon from '../resource/person.png';
-import starWithoutBorderImage from '../resource/star-without-border.png';
+import inviteImage from '../resource/img_invite_1.png';
+import personIcon from '../resource/img_person.png';
+import starWithoutBorderImage from '../resource/img_star_without_border.png';
 
 class InviteYouView extends Component {
     render() {

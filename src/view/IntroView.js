@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { INTRO_STRINGS } from '../constants/strings';
-import mainImage from '../resource/main.png';
-import starImage from '../resource/star.png';
+import introMainImage from '../resource/img_intro_main.png';
+import starImage from '../resource/img_star.png';
 
 import CorneredView from './CorneredView';
 
@@ -64,7 +64,7 @@ class IntroView extends Component {
           </div>
 
           <div className="image-container">
-            <img className="image" src={mainImage} alt="Main image" style={{
+            <img className="image" src={introMainImage} alt="Main image" style={{
               maxWidth: '100%',
               marginTop: 45,
               borderTopLeftRadius: '255px',

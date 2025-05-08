@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
-import starWithoutBorderImage from '../resource/star-without-border.png';
+import starWithoutBorderImage from '../resource/img_star_without_border.png';
 import starBlueImage from '../resource/star-blue.png';
 import starPuppleImage from '../resource/star-pupple.png';
 

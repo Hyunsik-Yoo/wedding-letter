@@ -1,4 +1,6 @@
 import './App.css';
+import React from 'react';
+import { APP_STRINGS } from './constants/strings';
 
 // Hooks
 import useLoading from './hooks/useLoading';
@@ -41,14 +43,14 @@ function App() {
         marginTop: 35,
         letterSpacing: '-2.5%'
       }}>
-        따뜻한 봄에 시작한 인연이<br></br>
-        함께 맞이하는 네 번째 봄이 다가오는 날<br></br>
-        부부가 되려 합니다.<br></br>
+        {APP_STRINGS.INVITATION.LINE1}<br></br>
+        {APP_STRINGS.INVITATION.LINE2}<br></br>
+        {APP_STRINGS.INVITATION.LINE3}<br></br>
         <br></br>
-        저희 두 사람의 새로운 시작에<br></br>
-        소중한 분들을 초대합니다.<br></br>
-        부디 귀한 걸음 하시어<br></br>
-        축하와 격려로 함께해 주세요.<br></br>
+        {APP_STRINGS.INVITATION.LINE4}<br></br>
+        {APP_STRINGS.INVITATION.LINE5}<br></br>
+        {APP_STRINGS.INVITATION.LINE6}<br></br>
+        {APP_STRINGS.INVITATION.LINE7}<br></br>
       </p>
 
       <InviteYouView />
